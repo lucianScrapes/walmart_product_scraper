@@ -4,7 +4,7 @@ This is a scraping script example using selenium.
 ##  :book: Features
 * private proxy
 * anti-captcha (2captcha)
-* export to sqllite, csv, xlsx
+* export to sqlite, csv, xlsx
 
 ##  :tangerine: Example usage:
 
