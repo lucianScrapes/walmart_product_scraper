@@ -17,5 +17,5 @@ $ scrape_products.py https://www.walmart.com/browse/patio-garden/patio-chairs-se
 ```
 
 ## :memo: Notes
-Put your 2captcha api key in the "2CAPTCHA_API.txt" file.
-While using a selenium trick, the Walmart website doesn't throw captcha challenges, even when using proxies.
+* Put your 2captcha api key in the "2CAPTCHA_API.txt" file.
+* While using a selenium trick, the Walmart website doesn't throw captcha challenges, even when using proxies.
