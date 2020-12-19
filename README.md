@@ -1,2 +1,2 @@
-# walmart_product_scraper
+# Walmart Product Scraper
 Scraping script example
