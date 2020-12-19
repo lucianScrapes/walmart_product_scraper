@@ -243,9 +243,9 @@ if __name__ == "__main__":
     driver_captcha_support(driver,walmart_start_page)
     time.sleep(5)
     page_numbers = driver.find_element_by_xpath('//*[@id="mainSearchContent"]/div[3]/div[2]/ul/li[8]/a').text
-    print(page_numbers)
+    print(str(page_numbers) + " pages to scrape.")
 
-    for page in range(1,2):
+    for page in range(1,int(page_numbers)+1):
         if '&povid' in walmart_start_page:
             walmart_start_page = walmart_start_page.replace('?page=' + str(int(page)-1),'?page=' + str(page))
             driver_captcha_support(driver,walmart_start_page)
