@@ -139,11 +139,10 @@ def driver_captcha_support(driver,url):
             print("Error Handling Captcha, Stopping Program")
             driver.quit()
             exit()
-        #input('handleCaptcha("%s")' % token)
         #driver.execute_script('document.getElementById("g-recaptcha-response").innerHTML = "%s"' % token)
         #time.sleep(1)
         driver.execute_script('handleCaptcha("%s")' % token)
-        time.sleep(40)
+        time.sleep(3)
         driver_captcha_support(driver,url)
     else:
         return 1
@@ -234,7 +233,7 @@ if __name__ == "__main__":
     #co.add_extension(r'UBLOCK.crx')
     driver = webdriver.Chrome(options=co)
     driver.get('https://google.com/')
-    driver.execute_script('''window.open("https://www.walmart.com/cp/home/4044","_blank");''')
+    driver.execute_script('''window.open("https://www.walmart.com/","_blank");''')
     time.sleep(5)
     driver.close()
     time.sleep(1)
