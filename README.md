@@ -5,7 +5,7 @@ This is a scraping script example using selenium.
 * gets product id, name and price, or prince range
 * private proxy support
 * anti-captcha (2captcha)
-* export to sqlite, csv, xlsx
+* export to sqlite, csv, or xlsx
 
 ##  :memo: Example usage
 
